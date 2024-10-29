@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Book Reviews</title>
+</head>
+<body>
+    <header>
+        <h1>Bookworm Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="author.html">Author Spotlight</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 id="book1">The Great Gatsby</h2>
+        <p>Author: F. Scott Fitzgerald</p>
+        <p>Synopsis: A classic tale of love and ambition in the roaring twenties.</p>
+        <p>Rating: ★★★★☆</p>
+        
+        <h3>Comments</h3>
+        <div id="comments"></div>
+        <textarea id="commentInput" placeholder="Leave a comment..."></textarea>
+        <button onclick="addComment('comments', 'commentInput')">Submit</button>
+        
+        <h2 id="book2">1984</h2>
+        <p>Author: George Orwell</p>
+        <p>Synopsis: A dystopian novel that explores the dangers of totalitarianism.</p>
+        <p>Rating: ★★★★★</p>
+        <h3>Comments</h3>
+        <div id="comments"></div>
+        <textarea id="commentInput" placeholder="Leave a comment..."></textarea>
+        <button onclick="addComment('comments', 'commentInput')">Submit</button>
+
+        <h2 id="book3">Pride and Prejudice</h2>
+        <p>Author: Leo Tolstoy</p>
+        <p>Synopsis: War and Peace is a literary work by the Russian author Lev Tolstoy.</p>
+        <p>Rating: ★★★★☆</p>
+        
+        <h3>Comments</h3>
+        <div id="comments2"></div>
+        <textarea id="commentInput2" placeholder="Leave a comment..."></textarea>
+        <button onclick="addComment('comments2', 'commentInput2')">Submit</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Bookworm Haven</p>
+    </footer>
+</body>
+</html>
